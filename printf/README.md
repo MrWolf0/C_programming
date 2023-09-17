@@ -30,10 +30,6 @@ In this project We implement C built in function printf we some limits of its fe
   * this function in to take the input and pass to specifer function as a variable list to print the right content
   by calling the right specifer.
 
-* **4. I can only go one way. I've not got a reverse gear**
-  * [4-print_rev.c](./4-print_rev.c): C function that prints a string, in reverse,
-  followed by a new line.
-
 * **_putchar**
   * by using write function we impelemented the putchar function to write char by char.
 
