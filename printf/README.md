@@ -24,7 +24,7 @@ In this project We implement C built in function printf we some limits of its fe
    to manage our work by using variable list to handle more than value passed to the function.
 
 * **number_print**
-  * this function is used to handel how to print integer value usig `ASCII` conversion and its type `variadic function`.
+  * this function is used to handel how to print integer value usnig `ASCII` conversion and its type `variadic function`.
 
 * **_printf**
   * this function in to take the input and pass to specifer function as a variable list to print the right content
