@@ -5,19 +5,14 @@
  *
  *@format: data and its specifier
  *passing a variable arguments using ...
- *sart iteration using pointer mechanism
-*because va_list is a struct in AMD defension conatin pointers
-*think in it as functions not pointers so start just to start count
-****************************************************************
-*call specifer function for current index that will
-*calll number_print function for integers
-*assinging result to printed
  *Return: count of chars.
  */
 int _printf(const char *format, ...)
 {
 	int i = 0, result = 0, printed;
-
+/*sart iteration using pointer mechanism*/
+/*because va_list is a struct in AMD defension conatin pointers*/
+/*think in it as functions not pointers so start just to start count*/
 	va_list args;
 
 	va_start(args, format);
@@ -39,6 +34,9 @@ int _printf(const char *format, ...)
 				result = -1;
 				break;
 			}
+			/*call specifer function for current index that wil*/l
+			/*calll number_print function for integers*/
+			/*assinging result to printed*/
 			printed += specifiers(format[i + 1], args);
 			/*if there is no result yet still print any */
 			/*char befor '%' */
