@@ -11,7 +11,7 @@
  * Return: char count.
  */
 
-int specifiers(char con_spec, va_list args)
+int specifiers(char specifier_letter, va_list args)
 {
 	int i = 0;
 	int result = 0;
@@ -20,13 +20,16 @@ int specifiers(char con_spec, va_list args)
 	sympoles spec[] = {
 		{'d', number_print},
 		{'i', number_print},
+		{'s', string_print},
+		{'c', char_print},
+		{'%', mod_print},
 		{0, NULL}
 	};
 /* loop for each element in variable list args do */
 	while (spec[i].specifiers)
 	{
 /*if comming letter == allowed letters in struct*/
-		if (con_spec == spec[i].specifiers)
+		if (specifier_letter == spec[i].specifiers)
 /*assign result of operation to the function that f pointer point to*/
 			result += spec[i].f(args);
 		i++;
@@ -35,7 +38,7 @@ int specifiers(char con_spec, va_list args)
 	if (result == 0)
 	{
 		result += _putchar('%');
-		result += _putchar(con_spec);
+		result += _putchar(specifier_letter);
 	}
 
 	return (result);

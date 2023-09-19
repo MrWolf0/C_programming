@@ -28,14 +28,14 @@ int _printf(const char *format, ...)
 		printed = 0;
 		/*if _putchar == '%' */
 		if (format[i] == '%')
-		{ 
+		{
 			/*break if no data after '%' */
 			if (!format[i + 1] || (format[i + 1] == ' ' && !format[i + 2]))
 			{
 				result = -1;
 				break;
 			}
-			/*call specifer function for current index that wil*/l
+			/*call specifer function for current index that will*/
 			/*calll number_print function for integers*/
 			/*assinging result to printed*/
 			printed += specifiers(format[i + 1], args);

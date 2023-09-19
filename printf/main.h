@@ -21,6 +21,9 @@ typedef struct specifiers
 
 int _printf(const char *format, ...);
 int specifiers(char s, va_list args);
+int string_print(va_list args);
+int char_print(va_list args);
+int mod_print(va_list args);
 int _putchar(char c);
 int number_print(va_list args);
 #endif
