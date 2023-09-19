@@ -10,6 +10,9 @@ In this project We implement C built in function printf we some limits of its fe
 | `number_print`    | `function to print integer values;`     |
 | `_printf`         | `the function that we impelemen`        |
 | `_putchar`        | `print char by char`                    |
+| `mod_print`       | `print % sympol if pass it to _printf`  |
+| `print_char`      | `print one char if we pass %c`          |
+| `print_string`    | `print a string passed to _printf`      |
 | `specifiers`      | `contain printf options`                |
 
 
@@ -36,3 +39,27 @@ In this project We implement C built in function printf we some limits of its fe
 * **specifier**
   * a variadic function that callig the right specifer and calling a pointer function that store address of passing 
   list from `_printf` function its depands on struct define in `main.h`.
+* **mod_print**
+  * print the sympol % as a sympol not as a spichall char for printf if we pass % to printf mean that we will pass a specifier'
+  so if pass % inested of a specifier so that function handel that case.
+  * **print_char**
+  * print one char as a specifier input 
+  * **print_string**
+  * function to handle hoe to print string by return -1 if we initialize the string as an empty string and pass it to printf
+  also retur null if we use the specifier %s without pass any data
+  and if we pass a string containing data the function return positive value of how many characters passed so if the return value 
+  is positive value the fuction executed successfully
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
